@@ -1,0 +1,250 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky{
+    position: sticky;
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    text-align: center;
+}
+.btn-google-play, .btn-app-store{
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+.btn-google-play{
+    background-color: #3BCCFF;
+}
+.btn-app-store{
+    background-color: #0470b9;
+}
+.btn-close{
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: x-small;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7EAA92;
+    padding: 5px 20px;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navRight{
+    display: flex;
+    gap: 20px;
+}
+.navRight a{
+    color: #fff;
+    text-decoration: none;
+}
+nav img{
+    width: 8%;
+}
+.navRight a:hover{
+    color: #D3D04F;
+}
+
+.modeTgl {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  float: right;
+  margin-right: 20px;
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #FEE8B0;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.slider:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #5D5D5D;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - 22px);
+}
+
+input:checked + .slider:after {
+  left: calc(100% - 18px);
+}
+
+/* Dark mode styles */
+.dark-mode .slider {
+  background-color: #5D5D5D;
+}
+
+.dark-mode .slider:before {
+  background-color: #C4C4C4;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.toggle-icon.moon {
+  left: 2px;
+}
+
+.toggle-icon.sun {
+  right: 2px;
+}
+
+.dark-mode #Home, .dark-mode #Meal, .dark-mode #Workout,  .dark-mode .dropdown, .dark-mode .dropdown-menu{
+    background-color: #2C2C2C;
+    color: #fff;
+  }
+.dark-mode nav, .dark-mode footer{
+    background-color: #263A29;
+    color: #fff;
+}
+.dark-mode #workout-top{
+    background-color: #42855B;
+}
+.dark-mode #workout-btm{
+    background-color: #665A48;
+}
+
+#Home, #Workout{
+    padding: 3%;
+}
+b{
+    color: #41644A;
+}
+.dark-mode b{
+    color: #F7E1AE;
+}
+
+#Meal {
+    padding: 3%;
+    font-size: large;
+}
+
+.workout-cont{
+    
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+.workout-cont img{
+    width: 40%;
+    height: fit-content;
+}
+
+.workout-cont > article{
+    display: flex;
+    padding: 5%;
+    border-radius: 30px;
+}
+#workout-top{
+    background-color: #E5F9DB;
+}
+#workout-btm{
+    background-color: #EDE4E0;
+}
+footer{
+    text-align: center;
+    background-color: #7EAA92;
+    padding: 1%;
+}
+footer img{
+    width: 2%;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+
+@media (max-width: 600px) {
+    nav img {
+        width: 15%;
+    }   
+    .workout-cont {
+        /* justify-content: initial; */
+        padding: initial; /* Remove padding */
+        width: 100%;
+    }
+    .workout-cont img{
+        align-self: center;
+    }
+    .workout-cont > article {
+        width: 100%;
+    }
+    #workout-top{
+        flex-direction: column;
+    }
+    #workout-btm{
+        flex-direction: column-reverse;
+    }
+    .sticky{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav img {
+        width: 12%;
+      }
+}

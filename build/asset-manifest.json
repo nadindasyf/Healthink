@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5def7404.css",
+    "main.js": "/static/js/main.02572fb6.js",
+    "static/js/787.a526e8cd.chunk.js": "/static/js/787.a526e8cd.chunk.js",
+    "static/media/weightloss.png": "/static/media/weightloss.9f8f5e727d0c0b55d47f.png",
+    "static/media/maintenance.png": "/static/media/maintenance.d1d7652b58a6449be9f9.png",
+    "static/media/weightgain.png": "/static/media/weightgain.118f6fe4655ac328ce6a.png",
+    "static/media/Gym.png": "/static/media/Gym.d76ac0ba28e0b54d97ef.png",
+    "static/media/Cardio.png": "/static/media/Cardio.e734768e1bd2b03ea0e3.png",
+    "static/media/Healthink Logo.png": "/static/media/Healthink Logo.9de7d2d97823b6f40c3e.png",
+    "static/media/LinkedIn logo.png": "/static/media/LinkedIn logo.bb933d6809d6410387a0.png",
+    "index.html": "/index.html",
+    "main.5def7404.css.map": "/static/css/main.5def7404.css.map",
+    "main.02572fb6.js.map": "/static/js/main.02572fb6.js.map",
+    "787.a526e8cd.chunk.js.map": "/static/js/787.a526e8cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5def7404.css",
+    "static/js/main.02572fb6.js"
+  ]
+}
